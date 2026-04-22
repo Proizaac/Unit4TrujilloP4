@@ -7,11 +7,15 @@ public class SpawnManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-  
+        Instantiate(enemyPrefab, GenerateSpawnPosition(), enemyPrefab.transform.rotation);
+    }
+
+    private Vector3 GenerateSpawnPosition()
+    {
         float spawnPosX = Random.Range(-spawnRange, spawnRange);
         float spawnPosZ = Random.Range(-spawnRange, spawnRange);
         Vector3 spawnPos = new Vector3(spawnPosX, 0, spawnPosZ);
-        Instantiate(enemyPrefab, spawnPos, enemyPrefab.transform.rotation);
+        return spawnPos;
     }
 
     // Update is called once per frame
