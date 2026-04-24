@@ -5,11 +5,15 @@ public class Enemy : MonoBehaviour
     public float speed;
     private Rigidbody enemyRb;
     private GameObject player;
+    public int enemyCount;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         enemyRb=GetComponent<Rigidbody>();
         player=GameObject.Find("Player");
+    
+
 
     }
 
@@ -17,6 +21,8 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         Vector3 lookDirection = (player.transform.position - transform.position).normalized;
-        enemyRb.AddForce(lookDirection* speed);
+        enemyRb.AddForce(lookDirection * speed);
+        enemyCount = FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length;
+        
     }
 }

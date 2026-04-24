@@ -155,6 +155,7 @@ MonoBehaviour:
   hasPowerup: 0
   speed: 5
   powerupStrength: 15
+  powerupIndicator: {fileID: 1460938364}
 --- !u!54 &186301974
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -713,6 +714,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8878a37eb67ddac4ead51890a31d6a18, type: 3}
+--- !u!1 &1460938364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
+  m_PrefabInstance: {fileID: 2435740216971342156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1760081665
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +749,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 5438700163773804503, guid: 55475a310f11e0c468098c9163f3cf25, type: 3}
+  powerupPrefab: {fileID: 372887125613472309, guid: 43d5b3d1677108d42bd4783e58f1c264, type: 3}
+  enemyCount: 2
 --- !u!4 &1760081667
 Transform:
   m_ObjectHideFlags: 0
@@ -883,7 +891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4428908044626120, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 4428908044626120, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
       propertyPath: m_LocalPosition.z
