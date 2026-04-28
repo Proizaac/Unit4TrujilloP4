@@ -748,8 +748,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9604c679a1816914cac9200bd534cb2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 5438700163773804503, guid: 55475a310f11e0c468098c9163f3cf25, type: 3}
   powerupPrefab: {fileID: 372887125613472309, guid: 43d5b3d1677108d42bd4783e58f1c264, type: 3}
+  enemyPrefab:
+  - {fileID: 5438700163773804503, guid: eac1297be336ed4479992173854b0a60, type: 3}
+  - {fileID: 5438700163773804503, guid: 55475a310f11e0c468098c9163f3cf25, type: 3}
   enemyCount: 2
 --- !u!4 &1760081667
 Transform:
@@ -825,16 +827,24 @@ PrefabInstance:
       value: Powerup
       objectReference: {fileID: 0}
     - target: {fileID: 5239082536972035413, guid: 43d5b3d1677108d42bd4783e58f1c264, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7088429
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239082536972035413, guid: 43d5b3d1677108d42bd4783e58f1c264, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6853461
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239082536972035413, guid: 43d5b3d1677108d42bd4783e58f1c264, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.06
+      value: -0.1645
       objectReference: {fileID: 0}
     - target: {fileID: 5239082536972035413, guid: 43d5b3d1677108d42bd4783e58f1c264, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.547
+      value: 0.1519
       objectReference: {fileID: 0}
     - target: {fileID: 5239082536972035413, guid: 43d5b3d1677108d42bd4783e58f1c264, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.8533154
+      value: 5.2886
       objectReference: {fileID: 0}
     - target: {fileID: 5239082536972035413, guid: 43d5b3d1677108d42bd4783e58f1c264, type: 3}
       propertyPath: m_LocalRotation.w
