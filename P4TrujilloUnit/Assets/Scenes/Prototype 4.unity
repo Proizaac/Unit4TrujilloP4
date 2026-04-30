@@ -156,6 +156,8 @@ MonoBehaviour:
   speed: 5
   powerupStrength: 15
   powerupIndicator: {fileID: 1460938364}
+  currentPowerUp: 0
+  rocketPrefab: {fileID: 0}
 --- !u!54 &186301974
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1008,9 +1010,9 @@ SceneRoots:
   - {fileID: 1211016357}
   - {fileID: 245963551}
   - {fileID: 7305732181041295649}
-  - {fileID: 1403545340}
   - {fileID: 186301978}
   - {fileID: 2121322357}
   - {fileID: 1760081667}
   - {fileID: 1087077874885155759}
+  - {fileID: 1403545340}
   - {fileID: 2435740216971342156}
